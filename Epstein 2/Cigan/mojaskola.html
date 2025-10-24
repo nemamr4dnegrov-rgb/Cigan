@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Jakub Sukovský</title>
+  <style>
+    :root {
+      --dark-brown: #3e2723;
+      --coffee: #6d4c41;
+      --light-coffee: #a1887f;
+      --cream: #efebe9;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cream);
+      color: var(--dark-brown);
+      overflow-x: hidden;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, var(--dark-brown), var(--coffee));
+      color: var(--white);
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* ===== LOGÁ ===== */
+    .logo-left, .logo-right {
+      position: absolute;
+      top: 20px;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: var(--white);
+      padding: 3px;
+    }
+
+    .logo-left {
+      left: 25px;
+      animation: fadeInLeft 1s ease forwards;
+    }
+
+    .logo-right {
+      right: 25px;
+      animation: fadeInRight 1s ease forwards;
+    }
+
+    .logo-left:hover,
+    .logo-right:hover {
+      transform: scale(1.15);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+    }
+
+    /* ===== SEKCIÁ ===== */
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 40px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    section h2 {
+      border-bottom: 3px solid var(--coffee);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: var(--coffee);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--coffee);
+      color: var(--white);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    /* ===== ANIMÁCIE ===== */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    a {
+      color: var(--coffee);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      color: var(--dark-brown);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Malé zaoblené logá -->
+    <img src="lekoslogo.jpeg" alt="Logo 1" class="logo-left">
+    <img src="skolalogo.jpeg" alt="Logo 1" class="logo-right">
+
+    <h1>Jakub Sukovský</h1>
+    <p>Študent SOŠ Sečovce – III.T</p>
+  </header>
+
+  <section id="about">
+    <h2>O mne</h2>
+    <p>
+      Volám sa <strong>Jakub Sukovský</strong> a som študentom <strong>Strednej odbornej školy Sečovce</strong> v triede <strong>III.T</strong>.
+      Zaujímam sa o technológie, informatiku a moderný dizajn. Rád sa učím nové veci, najmä v oblasti webového vývoja
+      a programovania.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Zručnosti</h2>
+    <ul>
+      <li>HTML</li>
+      <li>Základy programovania (C++, Python)</li>
+      <li>Grafický dizajn (Canva, Photoshop)</li>
+      <li>Práca v tíme a kreatívne myslenie</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Moje projekty</h2>
+    <ul>
+      <li> Školský webový projekt</li>
+      <li> Grafický návrh loga</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>
+      Ak ma chceš kontaktovať, napíš mi na:<br>
+      <a href="mailto:jakub.sukovsky@example.com">jakub.sukovsky@example.com</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; Niggers
+  </footer>
+
+</body>
+</html>

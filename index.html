@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informačné a sieťové technológie – Sečovce</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #fdf6ec; 
+            color: #3d2521; 
+            text-align: center;
+        }
+
+        header {
+            background-color: #4e342e; 
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .header-images img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            background-color: #6d4c41; 
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #a07363; 
+            color: rgb(255, 255, 255);
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #4e342e; 
+            text-align: center;
+        }
+
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .subject-card {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        footer {
+            background-color: #4e342e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        a {
+            color: #97422f;
+        }
+
+        a:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!--Super Komentar ktoremu neviem dat nazov -->
+    <div class="header-images">
+        <img src="skolalogo.jpeg" alt="Škola Sečovce">
+        <img src="lekoslogo.jpeg" alt="Informačné technológie">
+    </div>
+
+    <h1>Informačné a sieťové technológie</h1>
+    <p>Stredná odborná škola Sečovce</p>
+</header>
+
+<nav>
+    <a href="#o-odbore">O odbore</a>
+    <a href="#ucimesa">Čo sa učíme</a>
+    <a href="#preco">Prečo si vybrať</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="o-odbore">
+    <h2>O odbore</h2>
+    <p>
+        Tento odbor je určený pre všetkých, ktorých zaujímajú počítače, technológie, siete a budúcnosť v IT. Naučíš sa nielen opravovať a skladať počítače, ale aj programovať, chrániť dáta a vytvárať siete.
+    </p>
+</section>
+
+<section id="ucimesa">
+    <h2>Čo sa učíme</h2>
+    <p>
+        V predmete <strong>CISCO – počítačové siete</strong> sa učíme, ako fungujú dátové siete, ako sa prenášajú informácie a ako správne konfigurovať zariadenia ako routery a switche.
+    </p>
+    <p>
+        <strong>Programovanie a skriptovanie</strong> nás učí logicky rozmýšľať a riešiť problémy pomocou kódu. Pracujeme s jazykmi ako Python, HTML, CSS, JavaScript či C#. Vytvárame webové stránky, skripty a jednoduché aplikácie.
+    </p>
+    <p>
+        V predmete <strong>Aplikovaná informatika</strong> sa zameriavame na prácu so softvérom a kancelárskymi nástrojmi. Učíme sa vytvárať databázy, pracovať s tabuľkami, zabezpečovať dáta a analyzovať informácie.
+    </p>
+    <p>
+        <strong>Aplikovaná elektrotechnika</strong> nám dáva základy o elektrických obvodoch, súčiastkach a meraniach. Pracujeme aj s mikrokontrolérmi a učíme sa, ako sa programujú zariadenia ako Arduino alebo ESP32.
+    </p>
+</section>
+
+<section id="preco">
+    <h2>Prečo si vybrať tento odbor?</h2>
+    <ul>
+        <li>Práca s modernými technológiami</li>
+        <li>Praktická výučba a prax</li>
+        <li>Pripraví ťa na dobre platenú prácu</li>
+        <li>IT je budúcnosť – veľa pracovných príležitostí</li>
+        <li>Môžeš študovať ďalej alebo rovno pracovať</li>
+    </ul>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <address>
+        <p>Stredná odborná škola, Sečovce<br>
+            Web: <a href="https://www.gdusecovce.sk" target="_blank">www.gdusecovce.sk</a><br>
+            Telefón: 055 123 4567<br>
+            Email: info@sossecovce.sk</p>
+    </address>
+</section>
+
+<footer>
+    Autor : Jakub Sukovský | 2025 SOŠ Sečovce – Odbor Informačné a sieťové technológie
+</footer>
+
+</body>
+</html>
